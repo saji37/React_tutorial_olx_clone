@@ -5,12 +5,13 @@ import Logo from '../../olx-logo.png';
 import './Signup.css';
 
 export default function Signup() {
-  /*const [username,setUsername] = useState('');
+  const [username,setUsername] = useState('');
   const [email,setEmail] = useState('');
   const [phone,setPhone] = useState('');
-  const [password,setPassword] = useState('');*/
+  const [password,setPassword] = useState('');
   const handleSubmit =(e)=>{
-    //console.log(username)
+    e.preventDefault()
+    console.log(username)
   }
   return (
     <div>
@@ -22,8 +23,8 @@ export default function Signup() {
           <input
             className="input"
             type="text"
-            //value={username}
-           // onChange={(e)=>setUsername(e.target.value)}
+            value={username}
+           onChange={(e)=>setUsername(e.target.value)}
             id="fname"
             name="name"
             defaultValue="John"
@@ -34,8 +35,8 @@ export default function Signup() {
           <input
             className="input"
             type="email"
-            //value={email}
-            //onChange={(e)=>setEmail(e.target.value)}
+            value={email}
+            onChange={(e)=>setEmail(e.target.value)}
             id="fname"
             name="email"
             defaultValue="John"
@@ -48,8 +49,8 @@ export default function Signup() {
             type="number"
             id="lname"
             name="phone"
-            //value={phone}
-           // onChange={(e)=>setPhone(e.target.value)}
+          value={phone}
+           onChange={(e)=>setPhone(e.target.value)}
             defaultValue="Doe"
           />
           <br />
@@ -60,8 +61,8 @@ export default function Signup() {
             type="password"
             id="lname"
             name="password"
-            //value={password}
-           // onChange={(e)=>setPassword(e.target.value)}
+            value={password}
+           onChange={(e)=>setPassword(e.target.value)}
             defaultValue="Doe"
           />
           <br />
