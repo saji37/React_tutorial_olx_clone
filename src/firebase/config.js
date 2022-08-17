@@ -3,7 +3,7 @@ import "firebase/auth"
 import 'firebase/firestore'
  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyAPDhMs1Q_ahbg_ylGo-240Oex0nZu2tAw",
+    apiKey: "ENTER YOUR API KEY HERE",
     authDomain: "olx-react-9ae8d.firebaseapp.com",
     projectId: "olx-react-9ae8d",
     storageBucket: "olx-react-9ae8d.appspot.com",
